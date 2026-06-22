@@ -1,7 +1,8 @@
 import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
-import { Pool } from 'pg';
+import pkg from 'pg';
+const { Pool } = pkg;
 import authRoutes from './routes/auth.js';
 import groupRoutes from './routes/groups.js';
 import daysRoutes from './routes/days.js';
