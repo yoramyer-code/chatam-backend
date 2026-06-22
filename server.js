@@ -24,7 +24,7 @@ export const pool = new Pool({
 });
 
 // Initialize database on startup
-await initializeDatabase();
+await initializeDatabase(pool);
 
 // Routes
 app.use('/api/auth', authRoutes);

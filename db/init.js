@@ -1,6 +1,4 @@
-import { pool } from '../server.js';
-
-export async function initializeDatabase() {
+export async function initializeDatabase(pool) {
   try {
     // Create tables if they don't exist
     await pool.query(`
